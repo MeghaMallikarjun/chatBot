@@ -1,0 +1,76 @@
+.app-hf-wrap {
+  width: 100%;
+  .app-hf-header {
+    background: white;
+    height: 60px;
+    padding: 0 15px;
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .app-hf-container {
+    padding: 10px 20px;
+    height: calc(100vh - 120px);
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  .app-hf-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.custom-btn-active {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background: #3A78E7;
+  color: white;
+}
+
+.custom-btn-light {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: #f8f9fa;
+  color: #000;
+}
+
+.mini-ProfilePick {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #3A78E7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.medium-ProfilePick {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #3A78E7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  .modal-content {
+    border: solid orange;
+  }
+}
