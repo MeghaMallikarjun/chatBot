@@ -1,22 +1,43 @@
 <div class="app-hf-wrap">
     <div class="app-hf-header flx-row flx-ac">Welcome Megha</div>
-    <div class="app-hf-container">
-        <div class="flx-row flx-jsb flx-ac profiles-wrap">
-            <div class="flx-row">
-                <div class="medium-ProfilePick">M</div>
-                <div class="self profile-name">Pallavi</div>
-            </div>
-            <div class="flx-row flx-jc flx-ac">
-                <button class="custom-btn-active pointer">Request</button>
+    <div class="app-hf-container flx-row">
+        <div class="left-container">
+            <div class="flx-row flx-jsb flx-ac profiles-wrap">
+                <div class="flx-row">
+                    <div class="medium-ProfilePick">P</div>
+                    <div class="flx-column profile-name">
+                        <div>Pallavi</div>
+                        <div>Megha Sent a Request to chat with you</div>
+                    </div>
+                </div>
+                <div class="flx-row flx-jc flx-ac">
+                    <!-- <button class="custom-btn-active pointer" (click)="onRequest()">{{btnName}}</button> -->
+                    <button class="custom-btn-active acpt-btn pointer">Accept</button>
+                    <button class="custom-btn-active rjct-btn pointer">Reject</button>
+                </div>
             </div>
         </div>
-        <div class="flx-row flx-jsb flx-ac profiles-wrap">
-            <div class="flx-row">
-                <div class="medium-ProfilePick">M</div>
-                <div class="self profile-name">Pooja</div>
-            </div>
-            <div class="flx-row flx-jc flx-ac">
-                <button class="custom-btn-active pointer">Request</button>
+        <div class="right-container">
+            <div class="msg-body">
+                <div class="reply-side">
+                    <div class="msg-wrap">
+                        <div class="msg">Hello. How are you today?</div>
+                    </div>
+                </div>
+                <div class="user-side">
+                    <div class="msg-wrap user-msg-wrap">
+                        <div class="msg">Hey! I'm fine. Thanks for asking!</div>
+                    </div>
+                </div>
+                <div class="flx-row flx-jsb type-wrap">
+                    <div class="flx-row input">
+                        <div class="self user-type">
+                            <input type="text" class="type-somethng" [(ngModel)]="message"
+                                placeholder="Type Something....">
+                        </div>
+                        <div class="flx-row flx-jc flx-ac pointer custom-btn-active self">Send</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
